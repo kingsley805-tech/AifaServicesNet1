@@ -1,0 +1,13 @@
+# Ignore dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Env files
+.env
+.env.local
+
+# Misc
+.DS_Store
+.vscode/
