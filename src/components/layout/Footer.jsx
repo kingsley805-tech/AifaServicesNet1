@@ -68,7 +68,7 @@ const Footer = ({ onOpenQuote }) => {
                 <img 
                   src="/imgs/aifaa.svg" 
                   alt="Aifa Services LTD" 
-                  className="w-auto h-[34px] object-contain" 
+                  className="w-auto h-[40px] object-contain" 
                   onError={(e) => {
                     e.target.style.display = 'none';
                   }}

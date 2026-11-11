@@ -154,11 +154,11 @@ const Navbar = ({ onOpenQuote }) => {
 
             {/* Brand Logo */}
             <Link to="/" className="flex items-center space-x-2.5 sm:space-x-3 group">
-              <div className="relative flex items-center justify-center w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-xl bg-white shadow-lg shadow-emerald-900/30 group-hover:scale-105 transition-transform border border-emerald-100">
+              <div className="relative flex items-center justify-center w-[68px] h-[68px] sm:w-20 sm:h-20 rounded-xl bg-white shadow-lg shadow-emerald-900/30 group-hover:scale-105 transition-transform border border-emerald-100">
                 <img 
                   src="/imgs/aifaa.svg" 
                   alt="Aifa Services LTD Logo" 
-                  className="w-auto h-[44px] sm:h-[52px] object-contain" 
+                  className="w-auto h-[52px] sm:h-[60px] object-contain" 
                   onError={(e) => {
                     e.target.style.display = 'none';
                     if (e.target.nextSibling) e.target.nextSibling.style.display = 'flex';
@@ -366,7 +366,7 @@ const Navbar = ({ onOpenQuote }) => {
           <div className="flex items-center justify-between pb-4 border-b border-emerald-900/60">
             <Link to="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2.5">
               <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center">
-                <img src="/imgs/aifaa.svg" alt="Aifa Logo" className="w-auto h-[40px] object-contain" />
+                <img src="/imgs/aifaa.svg" alt="Aifa Logo" className="w-auto h-[46px] object-contain" />
               </div>
               <div>
                 <span className="text-base font-black text-white block">AIFA <span className="text-emerald-400">SERVICES</span></span>
