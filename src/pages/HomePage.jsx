@@ -118,7 +118,7 @@ const HomePage = ({ onOpenQuote }) => {
 
               {/* Description */}
               <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Aifa Services Limited delivers certified, rapid-response <strong className="text-emerald-300 font-semibold">Pest Control & Scientific Fumigation</strong>, wholesale <strong className="text-amber-300 font-semibold">Industrial Safety Equipment & PPE</strong>, dependable <strong className="text-emerald-300 font-semibold">General Goods Logistics</strong>, and British-standard <strong className="text-slate-200 font-semibold">Construction & Architectural Tiling</strong> across Accra and nationwide.
+                 Aifa Services Limited delivers certified, rapid-response <strong className="text-emerald-300 font-semibold">Pest Control & Scientific Fumigation</strong>, wholesale <strong className="text-amber-300 font-semibold">Industrial Safety Equipment & PPE</strong>, dependable <strong className="text-emerald-300 font-semibold">General Goods Logistics</strong>, and British-standard <strong className="text-slate-200 font-semibold">Construction & Furnishing</strong> across Accra and nationwide.
               </p>
 
               {/* CTAs */}
@@ -478,7 +478,7 @@ const HomePage = ({ onOpenQuote }) => {
             Consult With Our Experts in Lapaz Today
           </h2>
           <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Whether you require commercial fumigation, wholesale safety PPE, global cargo logistics, or architectural tiling, our team is ready to assist.
+            Whether you require commercial fumigation, wholesale safety PPE, global cargo logistics, or construction & furnishing, our team is ready to assist.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
             <button

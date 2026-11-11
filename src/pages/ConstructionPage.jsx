@@ -16,7 +16,7 @@ import Interactive3DCard from '../components/3d/Interactive3DCard';
 const ConstructionPage = ({ onOpenQuote }) => {
   const [selectedFilter, setSelectedFilter] = useState('All');
 
-  const categories = ['All', 'Architectural Tiling', 'Commercial Renovation', 'Structural Works', 'Pest Prevention & Civil Works'];
+  const categories = ['All', 'Construction & Furnishing', 'Renovation', 'Structural Works', 'Pest Prevention & Civil Works'];
 
   const filteredProjects = selectedFilter === 'All' 
     ? constructionProjects 
@@ -37,7 +37,7 @@ const ConstructionPage = ({ onOpenQuote }) => {
               </span>
 
               <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                Architectural Tiling, Building Renovations & Civil Works
+                Construction, Furnishing & Building Renovations
               </h1>
 
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed">

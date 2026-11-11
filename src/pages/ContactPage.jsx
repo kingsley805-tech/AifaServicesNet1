@@ -218,7 +218,7 @@ const ContactPage = () => {
                         <option value="Pest Control & Fumigation">Pest Control & Fumigation</option>
                         <option value="Wholesale Safety Items & PPE">Wholesale Safety Items & PPE</option>
                         <option value="Supply of General Goods">Supply of General Goods</option>
-                        <option value="Construction & Tiling">Construction & Architectural Tiling</option>
+                        <option value="Construction & Tiling">Construction & Furnishing</option>
                         <option value="Other Corporate Inquiry">Other Corporate Inquiry</option>
                       </select>
                     </div>

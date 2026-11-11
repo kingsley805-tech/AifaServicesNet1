@@ -2,7 +2,7 @@ export const companyDetails = {
   name: "Aifa Services Limited",
   shortName: "Aifa Services LTD",
   tagline: "Excellence in Pest Control, Safety Equipment, Logistics & Construction",
-  description: "Aifa Services Limited is a multi-sector corporate solutions provider based in Lapaz, Accra, Ghana. We specialize in certified pest control & fumigation, wholesale safety items & PPE supply, general goods procurement & logistics, and professional construction & architectural tiling.",
+  description: "Aifa Services Limited is a multi-sector corporate solutions provider based in Lapaz, Accra, Ghana. We specialize in certified pest control & fumigation, wholesale safety items & PPE supply, general goods procurement & logistics, and professional construction & furnishing.",
   establishedYear: 2018,
   experienceYears: "10+",
   phone1: "+233 24 437 4069",
@@ -132,7 +132,7 @@ export const servicePillars = [
   },
   {
     id: "construction",
-    title: "Construction & Architectural Tiling",
+    title: "Construction & Furnishing",
     shortTitle: "Construction",
     tagline: "Master-Craftsman Building, Renovations & Premium Tiling",
     route: "/services/construction",
@@ -145,7 +145,7 @@ export const servicePillars = [
     features: [
       "British-Standard Precision Wall & Floor Tiling",
       "Structural Renovations, Additions & Extensions",
-      "Modern Interior Architecture & POP Ceiling Finishes",
+      "Modern Interior Furnishing & POP Ceiling Finishes",
       "Plumbing, Waterproofing & Surface Drainage Systems",
       "Turnkey Project Management from Foundation to Key Handover",
       "High-Grade Building Materials Supply"
@@ -271,7 +271,7 @@ export const constructionProjects = [
   {
     id: "proj-01",
     title: "Luxury Residential Master Bathroom & Living Room Tiling",
-    category: "Architectural Tiling",
+    category: "Construction & Furnishing",
     location: "East Legon, Accra",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
     desc: "Precision installation of 1200x600mm Italian porcelain tiles with laser leveling, waterproofing membrane, and epoxy grouting.",
@@ -345,7 +345,7 @@ export const clientReviews = [
     text: "Their tiling and finishing team transformed our new corporate headquarters in Accra. The tile alignment, clean grout lines, and attention to detail reflect true British-standard craftsmanship.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=150&q=80",
-    service: "Architectural Tiling & Renovation"
+    service: "Construction & Furnishing"
   }
 ];
 

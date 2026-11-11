@@ -41,7 +41,7 @@ const sectorNames = {
   'pest-control': "Pest Control & Fumigation",
   'safety-items': "Wholesale Safety & PPE",
   'general-goods': "Goods & Freight Logistics",
-  'construction': "Construction & Architectural Tiling"
+  'construction': "Construction & Furnishing"
 };
 
 const QuoteEstimatorPage = ({ onOpenQuote }) => {

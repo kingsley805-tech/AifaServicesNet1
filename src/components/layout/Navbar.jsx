@@ -85,7 +85,7 @@ const Navbar = ({ onOpenQuote }) => {
       badge: "Global Freight"
     },
     {
-      title: "Construction & Architectural Tiling",
+      title: "Construction & Furnishing",
       desc: "British-standard precision tiling & building",
       path: "/services/construction",
       icon: Building2,

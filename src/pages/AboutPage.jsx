@@ -71,7 +71,7 @@ const AboutPage = ({ onOpenQuote }) => {
     },
     {
       id: "construction",
-      title: "Architectural Tiling & Construction",
+      title: "Construction & Furnishing",
       badge: "BS 5385 Precision Standards",
       image: "/imgs/constru 1.jpg",
       video: "/imgs/bio.mp4",
@@ -393,7 +393,7 @@ const AboutPage = ({ onOpenQuote }) => {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                  <span>Top-rated architectural tiling contractors in Accra</span>
+                   <span>Top-rated construction & furnishing contractors in Accra</span>
                 </li>
               </ul>
             </div>
