@@ -64,11 +64,11 @@ const Footer = ({ onOpenQuote }) => {
           {/* Col 1: Brand & Bio */}
           <div className="lg:col-span-2 space-y-4">
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-600 to-emerald-900 p-2 shadow-lg shadow-emerald-900/40">
+              <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-600 to-emerald-900 shadow-lg shadow-emerald-900/40">
                 <img 
                   src="/imgs/aifaa.svg" 
                   alt="Aifa Services LTD" 
-                  className="w-full h-full object-contain filter brightness-110" 
+                  className="w-auto h-[34px] object-contain" 
                   onError={(e) => {
                     e.target.style.display = 'none';
                   }}
