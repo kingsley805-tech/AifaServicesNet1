@@ -38,28 +38,28 @@ const HomePage = ({ onOpenQuote }) => {
       src: "/imgs/fumigation.mp4",
       poster: "/imgs/3d-fumigation-hero.jpg",
       title: "ULV Fumigation & Pest Eradication",
-      sector: "Division 01 • EPA Certified",
+      sector: "Pest Control & Fumigation",
       tagline: "Eco-Friendly WHO Formulations & 5-Year Termite Defense"
     },
     {
       src: "/imgs/7170781-uhd_4096_2160_25fps.mp4",
       poster: "/imgs/p0.jpg",
       title: "Wholesale Industrial PPE & Safety",
-      sector: "Division 02 • Direct Wholesale",
+      sector: "Wholesale Safety & PPE",
       tagline: "ANSI/EN Certified Helmets, Boots, Respirators & Harnesses"
     },
     {
       src: "https://assets.mixkit.co/videos/preview/mixkit-cargo-ship-sailing-in-the-ocean-40674-large.mp4",
       poster: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
       title: "Supply of General Goods & Logistics",
-      sector: "Division 03 • Global Freight",
+      sector: "General Goods & Logistics",
       tagline: "Ocean FCL/LCL, Air Cargo Express & Nationwide Road Haulage"
     },
     {
       src: "/imgs/bio.mp4",
       poster: "/imgs/constru 1.jpg",
       title: "Precision Construction & Tiling",
-      sector: "Division 04 • British Standards",
+      sector: "Construction & Tiling",
       tagline: "Laser-Calibrated Tiling BS 5385 & Luxury Renovation Fit-Outs"
     }
   ];
@@ -105,7 +105,7 @@ const HomePage = ({ onOpenQuote }) => {
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/90 text-emerald-300 border border-emerald-500/50 shadow-xl shadow-emerald-950/80 backdrop-blur-md">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span className="text-xs font-mono font-bold uppercase tracking-wider">
-                  EPA Certified Multi-Sector Specialist • Ghana
+                  Trusted Multi-Sector Specialist • Ghana
                 </span>
               </div>
 
@@ -144,7 +144,7 @@ const HomePage = ({ onOpenQuote }) => {
               <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-6 text-xs text-slate-400">
                 <span className="flex items-center gap-1.5 font-medium">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>EPA Certified Technicians</span>
+                  <span>Trained & Experienced Technicians</span>
                 </span>
                 <span className="flex items-center gap-1.5 font-medium">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -214,7 +214,7 @@ const HomePage = ({ onOpenQuote }) => {
                             : 'bg-emerald-950/60 text-slate-300 border-emerald-900/60 hover:bg-emerald-900/60'
                         }`}
                       >
-                        <span>DIV 0{idx + 1}</span>
+                        <span>{['Pest', 'Safety', 'Logistics', 'Construction'][idx]}</span>
                       </button>
                     ))}
                   </div>
@@ -285,7 +285,7 @@ const HomePage = ({ onOpenQuote }) => {
                       {/* Header with badge */}
                       <div className="flex items-center justify-between mb-4">
                         <span className="text-xs font-mono font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-800/60">
-                          Division 0{index + 1}
+                          Core Service
                         </span>
                         <span className="text-xs text-slate-400 font-medium">
                           Licensed in Ghana
@@ -316,7 +316,7 @@ const HomePage = ({ onOpenQuote }) => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
                           <span className="font-semibold">Professional Standard</span>
-                          <span className="text-emerald-300 font-mono text-[11px]">EPA / BS Compliant</span>
+                          <span className="text-emerald-300 font-mono text-[11px]">BS 5385 Compliant</span>
                         </div>
                       </div>
 
@@ -387,10 +387,10 @@ const HomePage = ({ onOpenQuote }) => {
                 <div className="p-4 rounded-2xl bg-emerald-950/50 border border-emerald-800/40">
                   <h4 className="text-sm font-bold text-white flex items-center gap-2">
                     <Award className="w-4 h-4 text-emerald-400" />
-                    Government EPA Certification
+                    Regulatory Compliance
                   </h4>
                   <p className="text-xs text-slate-400 mt-1">
-                    Full compliance with Environmental Protection Agency regulations and WHO eco-safe standards.
+                    Adherence to national environmental safety regulations and internationally recognized hygiene standards across all service lines.
                   </p>
                 </div>
               </div>
@@ -413,9 +413,9 @@ const HomePage = ({ onOpenQuote }) => {
                     <div className="w-10 h-10 rounded-xl bg-emerald-900/60 text-emerald-400 flex items-center justify-center mb-3">
                       <ShieldAlert className="w-5 h-5" />
                     </div>
-                    <h4 className="text-sm font-bold text-white mb-1">Zero Resurgence Guarantee</h4>
+                    <h4 className="text-sm font-bold text-white mb-1">Long-Lasting Protection</h4>
                     <p className="text-xs text-slate-400 leading-relaxed">
-                      Targeted residual treatments and multi-stage lifecycle barrier applications ensure persistent protection against pests.
+                      Targeted residual treatments and multi-stage lifecycle applications are designed to deliver durable protection against returning pests.
                     </p>
                   </div>
                 </Interactive3DCard>

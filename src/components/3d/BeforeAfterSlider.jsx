@@ -40,7 +40,7 @@ const BeforeAfterSlider = () => {
             Before & After: <span className="text-gradient-brand">Total Elimination</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-300 mt-2">
-            Drag the slider across the frame to inspect the real transformation of active subterranean termite damage into an EPA-certified impenetrable barrier.
+            Drag the slider across the frame to inspect the transformation of active subterranean termite damage into a professionally treated protective barrier.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ const BeforeAfterSlider = () => {
             <div className="absolute inset-0 w-full h-full">
               <img
                 src="/imgs/3d-fumigation-hero.jpg"
-                alt="After Professional EPA Fumigation"
+                alt="After professional fumigation treatment"
                 className="w-full h-full object-cover brightness-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
@@ -67,7 +67,7 @@ const BeforeAfterSlider = () => {
               <div className="absolute bottom-6 right-6 bg-[#041409]/90 backdrop-blur-md px-4 py-2 rounded-xl border border-emerald-500/50 text-right">
                 <span className="inline-flex items-center gap-1.5 text-emerald-400 text-xs font-mono font-bold">
                   <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                  <span>AFTER: 100% STERILIZED & BARRIER SEALED</span>
+                  <span>AFTER: TREATED & PROTECTED</span>
                 </span>
                 <p className="text-[11px] text-slate-300">WHO Eco-Friendly Chemical Fog Diffusion</p>
               </div>

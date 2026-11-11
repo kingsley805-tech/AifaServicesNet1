@@ -30,15 +30,15 @@ const AboutPage = ({ onOpenQuote }) => {
     {
       id: "pest-control",
       title: "Pest Control & Scientific Fumigation",
-      badge: "EPA Certified Operator",
+      badge: "Ghana-Licensed Operator",
       image: "/imgs/about-service-team.jpg",
       video: "/imgs/fumigation.mp4",
-      highlight: "EPA Authorized Commercial Pesticide Operator License",
+      highlight: "Licensed Commercial Pest Control Operator",
       summary: "Specialized in structural termite soil barriers, hospital-grade pathogen disinfection, bedbug eradication, and high-pressure chemical misting for residential & commercial facilities across Accra.",
       metrics: [
         { label: "Properties Treated", val: "4,500+" },
         { label: "Warranty Guarantee", val: "Up to 5 Yrs" },
-        { label: "EPA Safety Rating", val: "100% Compliant" }
+        { label: "Safety Standards", val: "HSE Compliant" }
       ]
     },
     {
@@ -103,7 +103,7 @@ const AboutPage = ({ onOpenQuote }) => {
             Setting the Benchmark for <span className="text-gradient-brand">Professional Excellence</span>
           </h1>
           <p className="text-sm sm:text-base text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Founded with an uncompromising commitment to quality and regulatory compliance, Aifa Services LTD is an EPA-certified multi-sector powerhouse delivering excellence across Pest Control, Wholesale Safety PPE, Freight Logistics, and Precision Construction.
+            Founded with an uncompromising commitment to quality and regulatory compliance, Aifa Services LTD is a Ghana-registered multi-sector powerhouse delivering excellence across Pest Control, Wholesale Safety PPE, Freight Logistics, and Precision Construction.
           </p>
         </div>
       </section>
@@ -153,10 +153,10 @@ const AboutPage = ({ onOpenQuote }) => {
               </div>
               <div className="text-xs">
                 <span className="font-bold text-white block uppercase tracking-wider">
-                  EPA Authorized Commercial Operator
+                  Licensed Commercial Pest Control Operator
                 </span>
                 <span className="text-emerald-300 text-[11px]">
-                  Registered & Licensed by Ghana Environmental Protection Agency
+                  Registered with Ghana Environmental Protection Agency
                 </span>
               </div>
             </div>
@@ -185,7 +185,7 @@ const AboutPage = ({ onOpenQuote }) => {
 
                   {/* Top Right Live Tag */}
                   <div className="absolute top-4 right-4 bg-emerald-950/90 backdrop-blur-md px-3 py-1 rounded-lg border border-emerald-600 text-[10px] font-mono text-emerald-300">
-                    EPA LICENSE VERIFIED
+                    GHANA LICENSED
                   </div>
                 </div>
 
@@ -194,7 +194,7 @@ const AboutPage = ({ onOpenQuote }) => {
                   <div className="flex items-center justify-between">
                     <div>
                       <h4 className="text-sm font-bold text-white uppercase tracking-wider">
-                        EPA Commercial Fumigation Specialists
+                        Commercial Fumigation Specialists
                       </h4>
                       <p className="text-[11px] text-emerald-300">
                         Dual-Respirator Protective Hazmat Protocols & High-Pressure Sprayers
@@ -208,7 +208,7 @@ const AboutPage = ({ onOpenQuote }) => {
                   <div className="grid grid-cols-3 gap-2 pt-1 text-center font-mono">
                     <div className="p-2 rounded-lg bg-[#040e07] border border-emerald-900/60">
                       <span className="text-[10px] text-slate-400 block">STANDARD</span>
-                      <strong className="text-xs text-white">WHO / EPA</strong>
+                      <strong className="text-xs text-white">WHO STANDARD</strong>
                     </div>
                     <div className="p-2 rounded-lg bg-[#040e07] border border-emerald-900/60">
                       <span className="text-[10px] text-slate-400 block">PPE GEAR</span>
@@ -260,7 +260,7 @@ const AboutPage = ({ onOpenQuote }) => {
                   }`}
                 >
                   <span className="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-widest mb-1">
-                    Division 0{idx + 1}
+                    Core Division
                   </span>
                   <span className="text-xs sm:text-sm font-bold text-white leading-snug">
                     {div.title}

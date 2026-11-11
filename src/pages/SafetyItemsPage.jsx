@@ -56,7 +56,7 @@ const SafetyItemsPage = ({ onOpenQuote }) => {
             <div className="lg:col-span-7 space-y-6">
               <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-amber-950/90 text-amber-400 border border-amber-700 shadow-lg shadow-amber-950">
                 <HardHat className="w-4 h-4 text-amber-400" />
-                Division 02 • Certified Wholesale PPE & Site Safety
+                Certified Wholesale PPE & Site Safety
               </span>
 
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">

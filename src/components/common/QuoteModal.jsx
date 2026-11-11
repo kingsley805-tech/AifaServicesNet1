@@ -93,7 +93,7 @@ const QuoteModal = ({ isOpen, onClose }) => {
           <div className="flex items-center space-x-3">
             <div>
               <h3 className="text-lg sm:text-xl font-extrabold tracking-tight">Request Quote & Inspection</h3>
-              <p className="text-xs text-emerald-200">Accra & Greater Accra Region • Licensed by EPA Ghana</p>
+              <p className="text-xs text-emerald-200">Accra & Greater Accra Region • Licensed & Registered in Ghana</p>
             </div>
           </div>
           <button 

@@ -65,10 +65,10 @@ const Navbar = ({ onOpenQuote }) => {
   const serviceLinks = [
     {
       title: "Pest Control & Fumigation",
-      desc: "EPA-certified termite, insect & rodent control",
+      desc: "Professional termite, insect & rodent control",
       path: "/services/pest-control",
       icon: ShieldAlert,
-      badge: "EPA Certified"
+      badge: "Fumigation"
     },
     {
       title: "Wholesale Safety Items & PPE",
@@ -101,7 +101,7 @@ const Navbar = ({ onOpenQuote }) => {
           <div className="flex items-center space-x-6">
             <span className="flex items-center space-x-1.5 text-emerald-400 font-medium">
               <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>EPA Certified & ISO Standards Compliant</span>
+              <span>Ghana & International Standards Compliant</span>
             </span>
             <span className="flex items-center space-x-1.5 text-slate-400">
               <Clock className="w-3.5 h-3.5 text-emerald-400" />
@@ -154,7 +154,7 @@ const Navbar = ({ onOpenQuote }) => {
 
             {/* Brand Logo */}
             <Link to="/" className="flex items-center space-x-2.5 sm:space-x-3 group">
-              <div className="relative flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white p-1.5 shadow-lg shadow-emerald-900/30 group-hover:scale-105 transition-transform border border-emerald-100">
+              <div className="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-white p-2 shadow-lg shadow-emerald-900/30 group-hover:scale-105 transition-transform border border-emerald-100">
                 <img 
                   src="/imgs/aifaa.svg" 
                   alt="Aifa Services LTD Logo" 
@@ -365,12 +365,12 @@ const Navbar = ({ onOpenQuote }) => {
           {/* Drawer Header */}
           <div className="flex items-center justify-between pb-4 border-b border-emerald-900/60">
             <Link to="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center space-x-2.5">
-              <div className="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl bg-white p-1.5 flex items-center justify-center">
                 <img src="/imgs/aifaa.svg" alt="Aifa Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <span className="text-base font-black text-white block">AIFA <span className="text-emerald-400">SERVICES</span></span>
-                <span className="text-[10px] text-emerald-300/80 font-mono">Lapaz, Accra • EPA Certified</span>
+                <span className="text-[10px] text-emerald-300/80 font-mono">Lapaz, Accra • Ghana</span>
               </div>
             </Link>
 
@@ -440,7 +440,7 @@ const Navbar = ({ onOpenQuote }) => {
                 }`
               }
             >
-              About Us & EPA License
+              About Us
             </NavLink>
 
             <NavLink 

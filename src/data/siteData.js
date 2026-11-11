@@ -25,7 +25,7 @@ export const companyDetails = {
     { value: "10+", label: "Years of Industry Excellence", suffix: "" },
     { value: "4,500+", label: "Properties Treated & Serviced", suffix: "" },
     { value: "99.8%", label: "Client Satisfaction Rate", suffix: "" },
-    { value: "100%", label: "EPA & Safety Certified", suffix: "" },
+    { value: "100%", label: "Safety & Compliance Focus", suffix: "" },
   ]
 };
 
@@ -34,14 +34,14 @@ export const servicePillars = [
     id: "pest-control",
     title: "Pest Control & Fumigation",
     shortTitle: "Pest Control",
-    tagline: "EPA-Certified Eradication, Prevention & Disinfection",
+    tagline: "Professional Eradication, Prevention & Disinfection",
     route: "/services/pest-control",
     heroImage: "https://images.unsplash.com/photo-1559056961-1f3a7a7b7a0e?w=800&q=80",
     cardImage: "https://images.unsplash.com/photo-1617791160588-241658ad6d4c?w=800&q=80",
     icon: "ShieldAlert",
     color: "emerald",
     video: "/imgs/man-spraying-insect-spray.mp4",
-    summary: "Complete elimination of termites, bedbugs, crawling & flying insects, rodents, and biological pathogens using eco-safe, WHO/EPA-approved chemicals.",
+    summary: "Eradication of termites, bedbugs, crawling & flying insects, rodents, and biological pathogens using regulated, low-toxicity formulations.",
     features: [
       "Advanced Termite Soil Pre-treatment & Post-Construction Barrier",
       "Thermal Fogging & Ultra-Low Volume (ULV) Misting",
@@ -63,7 +63,7 @@ export const servicePillars = [
       {
         slug: "crawling-insects",
         title: "Crawling Insect Extermination",
-        desc: "Total eradication of German cockroaches, ants, bedbugs, fleas, and spiders with guaranteed zero re-infestation.",
+        desc: "Eradication of cockroaches, ants, bedbugs, fleas, and spiders with durable follow-up protection.",
         img: "/imgs/crawling-bg.jpg",
         video: "/imgs/spraying_compressed.mp4",
         bullets: ["Odorless gel baiting technology", "Targeted crack & crevice micro-spray", "Bedbug lifecycle heat & residual spray", "Commercial food safety compliance"]
@@ -322,7 +322,7 @@ export const clientReviews = [
     name: "Dr. Evelyn Mensah",
     role: "Director of Operations",
     company: "PrimeCare Medical Centre",
-    text: "Hospital-grade disinfection and fumigation requires strict adherence to health standards. Aifa Services LTD delivers with precision, zero disruption to our patients, and full EPA certification documentation.",
+    text: "Hospital-grade disinfection and fumigation requires strict adherence to health standards. Aifa Services LTD delivers with precision and minimal disruption to our patients, backed by clear treatment and compliance documentation.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=150&q=80",
     service: "Medical Facility Fumigation"
@@ -351,10 +351,10 @@ export const clientReviews = [
 
 export const certifications = [
   {
-    name: "EPA Ghana Certified",
+    name: "EPA Ghana Registered",
     label: "Environmental Protection Agency",
-    desc: "Authorized & certified for commercial & industrial pesticide application and environmental fumigation.",
-    badge: "Official EPA License"
+    desc: "Registered provider for commercial & industrial pesticide application and environmental fumigation in Ghana.",
+    badge: "Registered Provider"
   },
   {
     name: "Ghana Standards Authority",
@@ -383,7 +383,7 @@ export const faqList = [
   },
   {
     q: "Are your pest control chemicals safe for children, pets, and kitchen spaces?",
-    a: "Yes. We use EPA-certified, WHO-approved synthetic pyrethroids and targeted gel baits. They are low-odor, biodegradable, and specifically formulated to target pests without leaving toxic residues in living or dining areas. We provide clear safety instructions for the brief re-entry period."
+    a: "Yes. We use low-odor gel baits and residual spray formulations appropriate for food-preparation premises, applied by trained operators according to product-label instructions. We provide clear safety guidance covering occupant protection and a brief re-entry period after treatment."
   },
   {
     q: "Do you supply industrial safety gear (PPE) in wholesale bulk quantities?",

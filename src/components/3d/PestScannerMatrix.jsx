@@ -26,40 +26,40 @@ const PestScannerMatrix = ({ onOpenQuote }) => {
       damageTimeframe: "3-6 Months Structural Compromise",
       bioBehavior: "Underground mud-tube network eating cellulose inside drywall, ceiling joists, and structural wood beams.",
       eradicationMethod: "High-pressure sub-slab chemical barrier injection + non-repellent colony transfer termiticide.",
-      warranty: "5-Year Renewable Warranty Protection",
+      warranty: "5-Year Renewable Protection Plan",
       epaChemical: "Fipronil / Imidacloprid Complex",
       video: "/imgs/bait_compressed.mp4",
       sensorFrequency: "1,240 Hz Acoustic Wood Detection"
     },
     bedbugs: {
       id: "bedbugs",
-      name: "Cimex Lectularius (Bedbugs)",
+      name: "Bedbugs (Cimex lectularius)",
       threatLevel: "SEVERE (Level 4)",
       threatColor: "text-amber-400 bg-amber-950/80 border-amber-700",
       damageTimeframe: "Rapid Exponential Multi-Room Infestation",
       bioBehavior: "Nocturnal blood-feeding parasites hiding inside mattress seams, headboard cavities, and electrical sockets.",
       eradicationMethod: "Dual-phase thermal fogging combined with micro-encapsulated ovicide spray targeting egg cycles.",
-      warranty: "90-Day Resurgence Free Guarantee",
+      warranty: "90-Day Follow-Up Service",
       epaChemical: "Pyrethroid & Bio-Neonicotinoid Blend",
       video: "/imgs/man-spraying-insect-spray.mp4",
       sensorFrequency: "98.4°F Thermal Heat Cluster"
     },
     cockroaches: {
       id: "cockroaches",
-      name: "Blattella Germanica (German Cockroaches)",
+      name: "German Cockroach (Small Kitchen Cockroach)",
       threatLevel: "HIGH (Level 4)",
       threatColor: "text-amber-400 bg-amber-950/80 border-amber-700",
       damageTimeframe: "Severe Commercial Kitchen Contamination",
       bioBehavior: "High bacterial vector carrying Salmonella and E. coli across food prep surfaces and residential pantries.",
       eradicationMethod: "Odorless micro-gel bait matrix placement in hairline crevices + pressurized crack-and-crevice barrier.",
-      warranty: "180-Day Zero Resurgence Protocol",
+      warranty: "180-Day Monitoring & Follow-Up",
       epaChemical: "Hydramethylnon / Dinotefuran Gel Matrix",
       video: "/imgs/spraying_compressed.mp4",
       sensorFrequency: "Pheromone Trail Bio-Sensor Active"
     },
     mosquitoes: {
       id: "mosquitoes",
-      name: "Anopheles & Aedes Mosquitoes",
+      name: "Mosquitoes (Anopheles & Aedes)",
       threatLevel: "PUBLIC HEALTH HAZARD",
       threatColor: "text-rose-400 bg-rose-950/80 border-rose-700",
       damageTimeframe: "Immediate Malaria & Dengue Vector Exposure",
@@ -72,13 +72,13 @@ const PestScannerMatrix = ({ onOpenQuote }) => {
     },
     rodents: {
       id: "rodents",
-      name: "Rattus Norvegicus & Roof Rats",
+      name: "Rats & Mice (Rattus spp.)",
       threatLevel: "EXTREME (Fire & Bio-Hazard)",
       threatColor: "text-red-400 bg-red-950/80 border-red-700",
       damageTimeframe: "Electrical Wiring Fires & Pipe Gnawing",
       bioBehavior: "Aggressive chewing on power cables, water conduits, ceiling insulation, and food grain storage.",
       eradicationMethod: "Tamper-proof heavy lockable bait stations + ultrasonic exclusion + galvanized metal mesh proofing.",
-      warranty: "100% Guaranteed Structural Seal",
+      warranty: "Structural Seal & Proofing",
       epaChemical: "Second-Generation Anticoagulant Blocks",
       video: "/imgs/trap_compressed.mp4",
       sensorFrequency: "Motion Micro-Radar Activated"
@@ -233,7 +233,7 @@ const PestScannerMatrix = ({ onOpenQuote }) => {
                 <div className="bg-[#06170d] p-4 rounded-2xl border border-emerald-900/50 space-y-1.5">
                   <span className="text-[11px] font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
                     <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>EPA Scientific Elimination Protocol:</span>
+                    <span>Professional Eradication Protocol:</span>
                   </span>
                   <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
                     {current.eradicationMethod}

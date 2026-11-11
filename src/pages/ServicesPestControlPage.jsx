@@ -33,25 +33,25 @@ const ServicesPestControlPage = ({ onOpenQuote }) => {
       urgency: "CRITICAL - Severe structural integrity hazard if delayed.",
       media: "/imgs/termitepg-img1.jpg",
       video: "/imgs/bait_compressed.mp4",
-      epaSpec: "EPA Registered • Sub-slab injection 185 PSI"
+      epaSpec: "Sub-slab injection barrier • 185 PSI"
     },
     bedbugs: {
-      name: "Cimex Lectularius (Bedbug Infestation)",
+      name: "Bedbug Infestation (Cimex lectularius)",
       signs: ["Itchy linear red bite welts in clusters on arms, neck, and legs", "Rust-colored blood smears on bedsheets, mattresses, and headboards", "Sweet, musty pheromone odor trapped in room corners", "Visible bugs clustered inside seam crevices and electrical wall sockets"],
       solution: "Dual-action thermal aerosol fogging combined with micro-encapsulated ovicide spray targeting egg cycles and nymphs.",
       urgency: "IMMEDIATE - 200+ eggs per female breeding rate.",
       media: "/imgs/crawling-bg.jpg",
       video: "/imgs/man-spraying-insect-spray.mp4",
-      epaSpec: "EPA Registered • Micro-encapsulated ovicide matrix"
+      epaSpec: "Micro-encapsulated ovicide matrix"
     },
     cockroaches: {
-      name: "German & American Cockroaches",
+      name: "Cockroaches (German & American)",
       signs: ["Droppings resembling ground black pepper along baseboards", "Pungent oily odor noticeable when opening kitchen cabinets", "Nocturnal sightings when switching on kitchen or bathroom lights", "Cylindrical brown egg capsules (oothecae) under sinks & appliances"],
       solution: "Odorless dinotefuran gel bait placement in micro-crevices + targeted crack-and-crevice pressurized residual barrier.",
       urgency: "HIGH - Carries Salmonella, E. coli, and triggers severe asthma.",
       media: "/imgs/crawling-insect-img1.jpg",
       video: "/imgs/spraying_compressed.mp4",
-      epaSpec: "WHO Food-Grade Safe • Fipronil / Dinotefuran Gel"
+      epaSpec: "Food-premises safe gel formulation"
     },
     rodents: {
       name: "Roof Rats, Norway Rats & House Mice",
@@ -69,7 +69,7 @@ const ServicesPestControlPage = ({ onOpenQuote }) => {
       urgency: "HIGH - Primary vector for Malaria and Dengue fever in Ghana.",
       media: "/imgs/flying-bg.jpg",
       video: "/imgs/fumigation.mp4",
-      epaSpec: "WHO Vector Control Standard • Permethrin Fogging"
+      epaSpec: "Vector control fogging formulation"
     }
   };
 
@@ -88,7 +88,7 @@ const ServicesPestControlPage = ({ onOpenQuote }) => {
             <div className="lg:col-span-7 space-y-6">
               <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-emerald-950 text-emerald-400 border border-emerald-700 shadow-lg shadow-emerald-950">
                 <ShieldAlert className="w-4 h-4 text-emerald-400" />
-                Division 01 • Ghana EPA Licensed Operator
+                Pest Control & Fumigation • Ghana
               </span>
 
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
@@ -96,7 +96,7 @@ const ServicesPestControlPage = ({ onOpenQuote }) => {
               </h1>
 
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-                Total scientific eradication of termites, cockroaches, bedbugs, rodents, and biological pathogens. We deploy WHO-approved, low-toxicity formulations that guarantee zero pest resurgence without endangering families, pets, or commercial personnel.
+                Thorough eradication of termites, cockroaches, bedbugs, rodents, and biological pathogens. We deploy low-toxicity formulations applied by trained operators, with ongoing inspection and follow-up to prevent resurgence — without endangering families, pets, or commercial personnel.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-2">
@@ -142,7 +142,7 @@ const ServicesPestControlPage = ({ onOpenQuote }) => {
 
                     <div className="absolute bottom-4 left-4 right-4 text-left">
                       <span className="text-[10px] uppercase font-mono font-bold text-emerald-400 tracking-wider">
-                        EPA Certified Protocol
+                        Certified Application Protocol
                       </span>
                       <h4 className="text-base font-bold text-white">
                         Ultra-Low Volume (ULV) Aerosol Misting
@@ -398,7 +398,7 @@ const ServicesPestControlPage = ({ onOpenQuote }) => {
             </div>
             <h4 className="text-base font-bold text-white mb-1">Warranty & Certification</h4>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Delivery of official EPA fumigation certificates and scheduled warranty audit check-ins.
+              Delivery of formal treatment certification records and scheduled follow-up audit check-ins.
             </p>
           </div>
         </div>

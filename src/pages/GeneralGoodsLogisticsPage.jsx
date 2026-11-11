@@ -56,7 +56,7 @@ const GeneralGoodsLogisticsPage = ({ onOpenQuote }) => {
             <div className="lg:col-span-7 space-y-6">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-950 text-emerald-400 border border-emerald-800">
                 <Truck className="w-3.5 h-3.5 text-emerald-400" />
-                Division 03 • Supply of General Goods & Logistics
+                Supply of General Goods & Logistics
               </span>
 
               <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">

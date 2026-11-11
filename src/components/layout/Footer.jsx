@@ -85,7 +85,7 @@ const Footer = ({ onOpenQuote }) => {
             </Link>
 
             <p className="text-sm text-slate-400 leading-relaxed pr-4">
-              Providing standard-setting solutions in EPA-certified pest eradication, wholesale industrial PPE, global freight logistics, and British-standard construction & tiling across Greater Accra and all regions of Ghana.
+              Providing standard-setting solutions in professional pest eradication, wholesale industrial PPE, global freight logistics, and British-standard construction & tiling across Greater Accra and all regions of Ghana.
             </p>
 
             {/* Certifications preview badge */}
@@ -213,7 +213,7 @@ const Footer = ({ onOpenQuote }) => {
               </li>
               <li>
                 <Link to="/about" className="text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-1.5">
-                  <span className="text-emerald-500">›</span> EPA Certifications
+                  <span className="text-emerald-500">›</span> Licensing & Standards
                 </Link>
               </li>
               <li>

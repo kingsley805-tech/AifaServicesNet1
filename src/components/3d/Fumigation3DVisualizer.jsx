@@ -33,8 +33,8 @@ const Fumigation3DVisualizer = ({ onOpenQuote }) => {
       subtitle: "Thermal cloud penetration into attic rafters & HVAC conduits",
       src: "/imgs/fumigation.mp4",
       poster: "/imgs/3d-fumigation-hero.jpg",
-      epaBadge: "EPA-GL-MIST-01",
-      killRate: "99.98%",
+      epaBadge: "PROTOCOL ULV-01",
+      killRate: "High Efficacy",
       agent: "Deltamethrin Micro-Encapsulated Matrix",
       pressure: "142.5 PSI",
       area: "3,500 sq ft / 15 mins",
@@ -46,12 +46,12 @@ const Fumigation3DVisualizer = ({ onOpenQuote }) => {
       subtitle: "Crack & crevice perimeter barrier injection against crawling insects",
       src: "/imgs/spraying_compressed.mp4",
       poster: "/imgs/crawling-bg.jpg",
-      epaBadge: "EPA-GL-INJ-04",
-      killRate: "100%",
+      epaBadge: "PROTOCOL INJ-04",
+      killRate: "Deep Coverage",
       agent: "Fipronil Non-Repellent Chemical Shield",
       pressure: "210.0 PSI",
       area: "Perimeter Foundation Barrier",
-      target: "Subterranean Termites & German Roaches"
+      target: "Subterranean Termites & Cockroaches"
     },
     {
       id: "termite-barrier",
@@ -59,11 +59,11 @@ const Fumigation3DVisualizer = ({ onOpenQuote }) => {
       subtitle: "High-density concrete slab boring and underground chemical saturation",
       src: "/imgs/bait_compressed.mp4",
       poster: "/imgs/termitepg-img1.jpg",
-      epaBadge: "EPA-GL-TRM-08",
-      killRate: "99.94%",
+      epaBadge: "PROTOCOL TRM-08",
+      killRate: "Protective Barrier",
       agent: "Imidacloprid Structural Foundation Defense",
       pressure: "185.2 PSI",
-      area: "5-Year Guaranteed Soil Horizon",
+      area: "5-Year Protection Plan Coverage",
       target: "Subterranean Colony Elimination"
     },
     {
@@ -72,7 +72,7 @@ const Fumigation3DVisualizer = ({ onOpenQuote }) => {
       subtitle: "Grade-A chemical respirators and full-spectrum protective deployment",
       src: "/imgs/7170781-uhd_4096_2160_25fps.mp4",
       poster: "/imgs/about-service-team.jpg",
-      epaBadge: "OSHA-EN397-PPE",
+      epaBadge: "STANDARD EN397-PPE",
       killRate: "Zero Risk",
       agent: "Dual-Cartridge Vapor Absorption Seal",
       pressure: "Atmospheric Safe",
@@ -85,8 +85,8 @@ const Fumigation3DVisualizer = ({ onOpenQuote }) => {
       subtitle: "Mosquito and vector breeding zone knock-down for large compounds",
       src: "/imgs/gation_compressed.mp4",
       poster: "/imgs/flying-bg.jpg",
-      epaBadge: "WHO-MALARIA-02",
-      killRate: "99.85%",
+      epaBadge: "VECTOR CTRL-02",
+      killRate: "Broad Coverage",
       agent: "Permethrin Botanical Bio-Larvicide",
       pressure: "95.0 PSI",
       area: "Open Compounds & Estates",
@@ -161,7 +161,7 @@ const Fumigation3DVisualizer = ({ onOpenQuote }) => {
               </span>
               <span className="px-2.5 py-1 rounded bg-amber-950/80 text-amber-300 font-mono text-[11px] border border-amber-700/60 flex items-center gap-1">
                 <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
-                <span>EPA CERTIFIED</span>
+                <span>CERTIFIED APPLICATION</span>
               </span>
             </div>
           </div>
@@ -304,7 +304,7 @@ const Fumigation3DVisualizer = ({ onOpenQuote }) => {
                 <span>Select 3D Fumigation Video Stream:</span>
               </span>
               <span className="text-[11px] font-mono text-emerald-400">
-                5 Tactical Divisions Available
+                5 Application Channels Available
               </span>
             </div>
 
@@ -351,7 +351,7 @@ const Fumigation3DVisualizer = ({ onOpenQuote }) => {
                 <div>
                   <h4 className="text-sm font-bold text-white">Need Emergency Pest Elimination or Fumigation?</h4>
                   <p className="text-xs text-slate-300">
-                    Same-day EPA certified technical deployment available across Greater Accra, Tema, and nationwide.
+                    Same-day certified technical deployment available across Greater Accra, Tema, and nationwide.
                   </p>
                 </div>
               </div>
