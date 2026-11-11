@@ -71,7 +71,7 @@ const ConstructionPage = ({ onOpenQuote }) => {
                   loop
                   playsInline
                   className="w-full h-80 object-cover"
-                  src="/imgs/bio.mp4"
+                  src="https://www.pexels.com/download/video/40398036/"
                   poster="/imgs/tile1.jpg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
