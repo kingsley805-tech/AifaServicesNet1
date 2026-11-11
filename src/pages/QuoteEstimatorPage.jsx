@@ -6,13 +6,43 @@ import {
   Building2, 
   CheckCircle2, 
   Send, 
-  ArrowRight, 
-  Phone, 
-  Calculator,
-  RotateCcw
+  Calculator
 } from 'lucide-react';
-import confetti from 'canvas-confetti';
 import { companyDetails } from '../data/siteData';
+
+const scopeLabels = {
+  'pest-control': [
+    "Studio / 1-2 Bedroom Apartment",
+    "3-4 Bedroom Standard Home / Compound",
+    "Executive 5+ Bedroom Villa / Commercial Office",
+    "Large Commercial Facility / Warehouse / Factory"
+  ],
+  'safety-items': [
+    "Starter PPE Pack (10 Workers)",
+    "Contractor Site Safety Pack (25 Workers)",
+    "Commercial Industrial Safety Pack (60 Workers)",
+    "Mining & Civil Major Fleet Pack (150+ Workers)"
+  ],
+  'general-goods': [
+    "Local Metropolitan Delivery / Haulage (Accra/Tema)",
+    "Inter-Regional Dedicated Truck Haulage",
+    "Consolidated Air / Ocean Cargo Clearance",
+    "Full Container Load (FCL) End-to-End Logistics"
+  ],
+  'construction': [
+    "Bathroom / Kitchen Precision Tiling (Up to 25 m²)",
+    "Living & Dining Tiling (Up to 80 m²)",
+    "Complete Residential Villa Flooring (Up to 250 m²)",
+    "Commercial Complex / Mall Floor Tiling (600+ m²)"
+  ]
+};
+
+const sectorNames = {
+  'pest-control': "Pest Control & Fumigation",
+  'safety-items': "Wholesale Safety & PPE",
+  'general-goods': "Goods & Freight Logistics",
+  'construction': "Construction & Architectural Tiling"
+};
 
 const QuoteEstimatorPage = ({ onOpenQuote }) => {
   const [sector, setSector] = useState('pest-control');
@@ -25,73 +55,28 @@ const QuoteEstimatorPage = ({ onOpenQuote }) => {
     brandedPPE: false,
     tankingMembrane: false
   });
-  const [submitted, setSubmitted] = useState(false);
-  const [contactName, setContactName] = useState('');
-  const [contactPhone, setContactPhone] = useState('');
-
   const handleAddonToggle = (key) => {
     setAddons(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
-  const calculateEstimate = () => {
-    let base = 350;
-    let label = "Residential Pest Extermination";
+  const scopeLabel = scopeLabels[sector][propertyScale - 1];
 
-    if (sector === 'pest-control') {
-      if (propertyScale === 1) { base = 250; label = "Studio / 1-2 Bedroom Apartment"; }
-      else if (propertyScale === 2) { base = 450; label = "3-4 Bedroom Standard Home / Compound"; }
-      else if (propertyScale === 3) { base = 850; label = "Executive 5+ Bedroom Villa / Commercial Office"; }
-      else { base = 1800; label = "Large Commercial Facility / Warehouse / Factory"; }
+  const selectedAddons = [];
+  if (sector === 'pest-control') {
+    if (addons.deepMisting) selectedAddons.push("Indoor Airborne Deep ULV Misting");
+    if (addons.drainLarvicide) selectedAddons.push("Gutter Biological Larvicide Treatment");
+  }
+  if (sector === 'safety-items' && addons.brandedPPE) {
+    selectedAddons.push("Custom Corporate Logo Screen Printing");
+  }
+  if (sector === 'construction' && addons.tankingMembrane) {
+    selectedAddons.push("Liquid Waterproof Tanking Membrane");
+  }
+  if (addons.warrantyExt) selectedAddons.push("Extended Written Warranty & Free Follow-up Revisit");
 
-      if (addons.deepMisting) base += 150;
-      if (addons.drainLarvicide) base += 120;
-      if (addons.warrantyExt) base += 200;
-    } 
-    else if (sector === 'safety-items') {
-      if (propertyScale === 1) { base = 800; label = "Starter PPE Pack (10 Workers)"; }
-      else if (propertyScale === 2) { base = 2200; label = "Contractor Site Safety Pack (25 Workers)"; }
-      else if (propertyScale === 3) { base = 5500; label = "Commercial Industrial Safety Pack (60 Workers)"; }
-      else { base = 12000; label = "Mining & Civil Major Fleet Pack (150+ Workers)"; }
-
-      if (addons.brandedPPE) base += 450;
-      if (addons.warrantyExt) base += 350;
-    }
-    else if (sector === 'general-goods') {
-      if (propertyScale === 1) { base = 600; label = "Local Metropolitan Delivery / Haulage (Accra/Tema)"; }
-      else if (propertyScale === 2) { base = 1800; label = "Inter-Regional Dedicated Truck Haulage"; }
-      else if (propertyScale === 3) { base = 4200; label = "Consolidated Air / Ocean Cargo Clearance"; }
-      else { base = 9500; label = "Full Container Load (FCL) End-to-End Logistics"; }
-    }
-    else if (sector === 'construction') {
-      if (propertyScale === 1) { base = 1200; label = "Bathroom / Kitchen Precision Tiling (Up to 25 m²)"; }
-      else if (propertyScale === 2) { base = 3500; label = "Living & Dining Tiling (Up to 80 m²)"; }
-      else if (propertyScale === 3) { base = 8500; label = "Complete Residential Villa Flooring (Up to 250 m²)"; }
-      else { base = 22000; label = "Commercial Complex / Mall Floor Tiling (600+ m²)"; }
-
-      if (addons.tankingMembrane) base += 600;
-      if (addons.warrantyExt) base += 500;
-    }
-
-    if (urgency === 'emergency') {
-      base = Math.round(base * 1.25);
-    }
-
-    return { base, label };
-  };
-
-  const estimate = calculateEstimate();
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    try {
-      confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 }
-      });
-    } catch (err) {}
-  };
+  const whatsappMessage = encodeURIComponent(
+    `Hello Aifa Services, I would like a customised quote. Service: ${sectorNames[sector]}. Scope: ${scopeLabel}. Response speed: ${urgency}. Add-ons: ${selectedAddons.join(', ') || 'None'}.`
+  );
 
   return (
     <div className="min-h-screen bg-[#060d09] text-slate-100 pt-16">
@@ -101,13 +86,13 @@ const QuoteEstimatorPage = ({ onOpenQuote }) => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-950 text-emerald-400 border border-emerald-800">
             <Calculator className="w-3.5 h-3.5 text-amber-400" />
-            Interactive Budget Estimator
+            Customised Quote Request
           </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            Calculate Your Project & Service Investment
+            Get a Tailored Quote For Your Project
           </h1>
           <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Configure your property scale, service scope, and timeline to receive an instant transparent preliminary cost estimate in Ghanaian Cedis (GH₵).
+            Tell us what you need and our team will prepare a personalised quote for your property, workforce, or service scope — no fixed published prices.
           </p>
         </div>
       </section>
@@ -187,7 +172,7 @@ const QuoteEstimatorPage = ({ onOpenQuote }) => {
                 Step 2: Property Scale / Workforce Volume
               </label>
               <span className="text-xs font-mono font-bold text-emerald-300 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800">
-                Level 0{propertyScale}: {estimate.label}
+                Level 0{propertyScale}: {scopeLabel}
               </span>
             </div>
 
@@ -228,7 +213,6 @@ const QuoteEstimatorPage = ({ onOpenQuote }) => {
                     />
                     <span className="text-xs font-semibold">Standard Scheduled Deployment (24-48 Hours)</span>
                   </div>
-                  <span className="text-[11px] text-slate-400">Standard Rate</span>
                 </label>
 
                 <label className={`flex items-center justify-between p-3.5 rounded-xl border cursor-pointer transition-all ${
@@ -244,14 +228,13 @@ const QuoteEstimatorPage = ({ onOpenQuote }) => {
                     />
                     <span className="text-xs font-semibold">🚨 Emergency Same-Day Dispatch (Within 2-4 Hours)</span>
                   </div>
-                  <span className="text-[11px] text-amber-400">+25% Rapid</span>
                 </label>
               </div>
             </div>
 
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-emerald-400 mb-3">
-                Optional Enhancements & Warranties
+                Optional Enhancements
               </label>
               <div className="space-y-2">
                 {sector === 'pest-control' && (
@@ -266,7 +249,6 @@ const QuoteEstimatorPage = ({ onOpenQuote }) => {
                         />
                         <span>Indoor Airborne Deep ULV Misting</span>
                       </span>
-                      <span className="text-emerald-400 font-mono">+GH₵ 150</span>
                     </label>
                     <label className="flex items-center justify-between p-3 rounded-xl bg-[#06120a] border border-emerald-900/50 text-xs text-slate-200 cursor-pointer">
                       <span className="flex items-center gap-2">
@@ -278,7 +260,6 @@ const QuoteEstimatorPage = ({ onOpenQuote }) => {
                         />
                         <span>Gutter Biological Larvicide Treatment</span>
                       </span>
-                      <span className="text-emerald-400 font-mono">+GH₵ 120</span>
                     </label>
                   </>
                 )}
@@ -294,7 +275,6 @@ const QuoteEstimatorPage = ({ onOpenQuote }) => {
                       />
                       <span>Custom Corporate Logo Screen Printing</span>
                     </span>
-                    <span className="text-emerald-400 font-mono">+GH₵ 450</span>
                   </label>
                 )}
 
@@ -309,7 +289,6 @@ const QuoteEstimatorPage = ({ onOpenQuote }) => {
                       />
                       <span>Liquid Waterproof Tanking Membrane</span>
                     </span>
-                    <span className="text-emerald-400 font-mono">+GH₵ 600</span>
                   </label>
                 )}
 
@@ -323,42 +302,61 @@ const QuoteEstimatorPage = ({ onOpenQuote }) => {
                     />
                     <span>Extended Written Warranty & Free Follow-up Revisit</span>
                   </span>
-                  <span className="text-emerald-400 font-mono">Included</span>
                 </label>
               </div>
             </div>
           </div>
 
-          {/* Estimate Display & Instant Quote Lock-in */}
-          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-emerald-950 via-[#0a2213] to-emerald-950 border border-emerald-500/50 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="space-y-1 text-center md:text-left">
-              <span className="text-xs uppercase font-bold tracking-wider text-emerald-400">Preliminary Estimate</span>
-              <div className="text-3xl sm:text-5xl font-black text-amber-400 tracking-tight">
-                GH₵ {estimate.base.toLocaleString()}
+          {/* Selection Summary & Quote Request */}
+          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-emerald-950 via-[#0a2213] to-emerald-950 border border-emerald-500/50 shadow-2xl">
+            <div className="space-y-3 mb-6">
+              <span className="text-xs uppercase font-bold tracking-wider text-emerald-400">Your Selection Summary</span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                <div className="bg-[#06120a] rounded-xl px-4 py-3 border border-emerald-900/50">
+                  <span className="text-[10px] uppercase tracking-wider text-slate-400 block">Service</span>
+                  <span className="font-semibold text-white">{sectorNames[sector]}</span>
+                </div>
+                <div className="bg-[#06120a] rounded-xl px-4 py-3 border border-emerald-900/50">
+                  <span className="text-[10px] uppercase tracking-wider text-slate-400 block">Scope / Level</span>
+                  <span className="font-semibold text-white">{scopeLabel}</span>
+                </div>
+                <div className="bg-[#06120a] rounded-xl px-4 py-3 border border-emerald-900/50">
+                  <span className="text-[10px] uppercase tracking-wider text-slate-400 block">Response Speed</span>
+                  <span className="font-semibold text-white">
+                    {urgency === 'standard' ? 'Standard (24-48 Hours)' : 'Emergency (2-4 Hours)'}
+                  </span>
+                </div>
+                <div className="bg-[#06120a] rounded-xl px-4 py-3 border border-emerald-900/50">
+                  <span className="text-[10px] uppercase tracking-wider text-slate-400 block">Enhancements</span>
+                  <span className="font-semibold text-white">
+                    {selectedAddons.length ? selectedAddons.join('; ') : 'None'}
+                  </span>
+                </div>
               </div>
-              <p className="text-xs text-slate-300">
-                Scope: <span className="font-semibold text-white">{estimate.label}</span>
-              </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+            <div className="flex flex-col sm:flex-row gap-3">
               <button
                 onClick={onOpenQuote}
-                className="px-6 py-4 bg-gradient-to-r from-emerald-600 to-green-500 hover:from-emerald-500 text-white font-extrabold rounded-xl text-xs uppercase tracking-wider shadow-xl flex items-center justify-center gap-2"
+                className="flex-1 px-6 py-4 bg-gradient-to-r from-emerald-600 to-green-500 hover:from-emerald-500 text-white font-extrabold rounded-xl text-xs uppercase tracking-wider shadow-xl flex items-center justify-center gap-2"
               >
                 <Send className="w-4 h-4" />
-                <span>Lock In This Quote</span>
+                <span>Request Customised Quote</span>
               </button>
 
               <a
-                href={`https://wa.me/233244374069?text=Hello%20Aifa%20Services,%20I%20used%20your%20online%20calculator%20and%20got%20an%20estimate%20of%20GHc%20${estimate.base}%20for%20${encodeURIComponent(estimate.label)}.`}
+                href={`https://wa.me/${companyDetails.phone1.replace(/[^0-9]/g, '')}?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-4 bg-emerald-950 text-emerald-300 hover:text-white font-bold rounded-xl text-xs uppercase tracking-wider border border-emerald-700/60 flex items-center justify-center gap-2"
               >
-                <span>WhatsApp Quote</span>
+                <span>WhatsApp Our Team</span>
               </a>
             </div>
+
+            <p className="text-[11px] text-slate-400 mt-4 text-center sm:text-left">
+              Our team will confirm scope and send you a formal personalised quote. Figures are not published online.
+            </p>
           </div>
 
         </div>

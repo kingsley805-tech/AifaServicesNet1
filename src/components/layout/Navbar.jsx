@@ -287,7 +287,7 @@ const Navbar = ({ onOpenQuote }) => {
                 }`
               }
             >
-              Cost Calculator
+              Get a Quote
             </NavLink>
 
             <NavLink 
@@ -452,7 +452,7 @@ const Navbar = ({ onOpenQuote }) => {
                 }`
               }
             >
-              Project Cost Estimator
+              Request a Quote
             </NavLink>
 
             <NavLink 

@@ -219,7 +219,7 @@ const GeneralGoodsLogisticsPage = ({ onOpenQuote }) => {
                     onClick={onOpenQuote}
                     className="w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-xs uppercase tracking-wider shadow-lg transition-all"
                   >
-                    Launch Quote Calculator
+                    Request a Quote
                   </button>
                 </div>
               </div>

@@ -218,7 +218,7 @@ const Footer = ({ onOpenQuote }) => {
               </li>
               <li>
                 <Link to="/quote-estimator" className="text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-1.5">
-                  <span className="text-emerald-500">›</span> Project Cost Estimator
+                  <span className="text-emerald-500">›</span> Request a Quote
                 </Link>
               </li>
               <li>

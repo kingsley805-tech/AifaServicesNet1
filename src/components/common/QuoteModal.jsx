@@ -38,26 +38,6 @@ const QuoteModal = ({ isOpen, onClose }) => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const calculateEstimatePreview = () => {
-    let base = 0;
-    let label = "Standard Service Scope";
-
-    if (sector === 'pest-control') {
-      if (propertyType === 'residential') { base = 350; label = "Residential Pest Treatment (3-5 Bedrooms)"; }
-      else if (propertyType === 'commercial') { base = 950; label = "Commercial / Office Facility Fumigation"; }
-      else { base = 1800; label = "Industrial Warehouse / Pre-construction Barrier"; }
-    } else if (sector === 'safety-items') {
-      base = 1200; label = "Wholesale PPE Package (Sample Starter Bundle)";
-    } else if (sector === 'general-goods') {
-      base = 2500; label = "Procurement & Freight Logistics Consultation";
-    } else if (sector === 'construction') {
-      base = 3500; label = "British-Standard Precision Tiling & Civil Inspection";
-    }
-
-    if (urgency === 'emergency') base = Math.round(base * 1.25);
-    return { base, label };
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -81,8 +61,6 @@ const QuoteModal = ({ isOpen, onClose }) => {
     setIsSubmitted(false);
     onClose();
   };
-
-  const estimate = calculateEstimatePreview();
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto animate-in fade-in duration-200">
@@ -310,16 +288,10 @@ const QuoteModal = ({ isOpen, onClose }) => {
                 ></textarea>
               </div>
 
-              {/* Estimate Preview Bar */}
-              <div className="bg-emerald-950/80 border border-emerald-800/60 rounded-2xl p-3.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
-                <div>
-                  <span className="text-slate-400 block text-[11px]">Preliminary Base Estimate Preview:</span>
-                  <span className="font-semibold text-emerald-300">{estimate.label}</span>
-                </div>
-                <div className="text-right">
-                  <span className="text-lg font-black text-amber-400">GH₵ {estimate.base.toLocaleString()}</span>
-                  <span className="text-[10px] text-slate-400 block">*Final quote confirmed after inspection</span>
-                </div>
+              {/* Quote Confirmation Note */}
+              <div className="bg-emerald-950/80 border border-emerald-800/60 rounded-2xl p-3.5 text-xs text-slate-300">
+                <span className="text-emerald-300 font-semibold block mb-0.5">Personalised Quote</span>
+                Our team will review your requirements and send you a customised quote. For transparency, no fixed prices are published on this website.
               </div>
 
               {/* Submit CTA */}
