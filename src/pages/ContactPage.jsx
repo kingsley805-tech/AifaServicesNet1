@@ -95,6 +95,12 @@ const ContactPage = () => {
                 >
                   Office: {companyDetails.phoneDisplay2}
                 </a>
+                <a 
+                  href={`tel:${companyDetails.phone3}`}
+                  className="block text-slate-300 hover:text-emerald-300 transition-colors"
+                >
+                  International: {companyDetails.phoneDisplay3}
+                </a>
               </div>
             </div>
 

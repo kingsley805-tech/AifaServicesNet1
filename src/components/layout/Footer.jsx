@@ -262,6 +262,9 @@ const Footer = ({ onOpenQuote }) => {
                   <a href={`tel:${companyDetails.phone2}`} className="hover:text-emerald-400 block text-slate-400">
                     {companyDetails.phoneDisplay2}
                   </a>
+                  <a href={`tel:${companyDetails.phone3}`} className="hover:text-emerald-400 block text-slate-400">
+                    {companyDetails.phoneDisplay3}
+                  </a>
                 </div>
               </div>
 
